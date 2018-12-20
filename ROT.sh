@@ -34,9 +34,10 @@ ASCII2CHARmaj2=$(printf "\\$(printf '%03o' "$ROTASCIImaj2")")
 
 echo "== ROT$2 result :"
 echo "- $1" | eval tr '[a-z]' '[$ASCII2CHARmin1-za-$ASCII2CHARmin2]' | eval tr '[A-Z]' '[$ASCII2CHARmaj1-ZA-$ASCII2CHARmaj2]'
-exit 1
+exit 0
 
 else
 	printf "$USAGE"
+	exit 1
 fi
 
