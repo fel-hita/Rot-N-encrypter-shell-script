@@ -9,7 +9,7 @@ Yellow='\033[1;33m'
 White='\033[1;37m'
 NoColor='\033[0m'
 
-USAGE="\n${Yellow}./ROT <string> <rotation> <output>\nUsage example: ./ROT abc 13 \nNB :( 0 < rotation < 26)\n"
+USAGE="\n${Yellow}./ROT <string> <rotation>\nUsage example: ./ROT abc 13 \nNB :( 0 < rotation < 26)\n"
 
 if [ -f "$1" ]; then
 	CONTENT=$(cat $1)
