@@ -22,7 +22,6 @@ else
 fi
 
 if [[ $2 > 0 && $2 < 26 ]]; then
-CHAR2ASCII=$(LC_CTYPE=C printf '%d' "'$1")
 ROTASCIImin1=$(echo $2 + 97 | bc)
 ROTASCIImin2=$(echo $2 + 96 | bc)
 ROTASCIImaj1=$(echo $2 + 65 | bc)
